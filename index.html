@@ -1,9 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ticket station</title>
-  </head>
-  <body></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section>
+        <!--        Header-->
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="https://th.bing.com/th/id/R.b746fec1ff58214ea7c6e5b9c426a965?rik=PFKgGuGxnHSPRQ&pid=ImgRaw&r=0" class="logo" /></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+    <!--        Header End-->
+    <!--        Hero Section-->
+        <div class="content">
+            <button onclick="topFunction()" id="myBtn" title="Click to go to the Top">Top</button>
+            <div class="textBox">
+                <h2>The Cost Of <span id="output">Art</span> In The Renaissance</h2>
+                <p>Step into a world where art transcends boundaries and imagination knows no limits.
+                     Our gallery is a haven for art enthusiasts, collectors,
+                      and anyone who appreciates the power of visual storytelling. 
+                    Explore a diverse and captivating collection of artworks that
+                     will take you on a journey through the realms of creativity.
+                </p>
+                <a href="#" id="learnmore">Explore Now</a>
+            </div>
+    
+            <div class="imgBox">
+                <img src="image/art1.png"
+                    alt="" class="starbucks">
+            </div>
+        </div>
+    
+        <ul class="thumbnails">
+            <li>
+                <img id="changeGreen" src="image/art1.png" onclick="imageSlider('image/art1.png');
+                            changeCircleColor('rgb(255, 228, 196)')
+                            changeSpanColor('rgb(255, 228, 196)')">
+            </li>
+            <li>
+                <img id="changePink1" src="image/art2.png" onclick="imageSlider('image/art2.png');
+                            changeCircleColor('rgb(114, 102, 88)')
+                            changeSpanColor('rgb(114, 102, 88)')">
+            </li>
+            <li>
+                <img id="changePink2" src="image/art3.png" onclick="imageSlider('image/art3.png');
+                            changeCircleColor('rgb(102, 101, 101)')
+                            changeSpanColor('rgb(102, 101, 101)')">
+            </li>
+        </ul>
+    
+        <ul class="social" id="social">
+            <li><a href="#" target="_blank"><img
+                        src="image/facebook.png"></a></li>
+            <li><a href="#" target="_blank"><img
+                        src="image/twitter.png"></a></li>
+            <li><a href="#" target="_blank"><img
+                        src="image/instagram.png"></a></li>
+        </ul>
+    </section>
+    <!--        Hero Section End-->
+    <!--        About Us-->
+    <section>
+    <div class="container">
+        <div id="slide">
+            <div class="item" style="background-image: url(image/gallery1.jpg);">
+                <div class="content2">
+                    <div class="name">Evoke Emotions</div>
+                    <div class="des">Art has the incredible ability to stir emotions,
+                         provoke thought, and inspire change.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(image/gallery2.jpg);">
+                <div class="content2">
+                    <div class="name">Discover the Unseen</div>
+                    <div class="des">Our artists, each a visionary in their own right, 
+                        bring their unique perspectives to life on canvas, paper, 
+                        and various media.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(image/gallery3.jpg);">
+                <div class="content2">
+                    <div class="name">Engage Your Senses</div>
+                    <div class="des">Art is more than just visual; it's an experience. 
+                        Immerse yourself in the world of art with our interactive 
+                        installations and multimedia exhibits. </div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(image/gallery4.jpg);">
+                <div class="content2">
+                    <div class="name">Visit Us Today</div>
+                    <div class="des"> Whether you're a seasoned art 
+                        aficionado or a newcomer to the art scene, 
+                        the Gallery of Creative Visionaries welcomes you with open arms.</div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class='bx bxs-left-arrow bx-fade-left' ></i></button>
+            <button id="next"><i class='bx bxs-right-arrow bx-fade-right' ></i></button>
+        </div>
+    </div>
+</section>
+    <!--        About Us End-->
+    <script src="app.js"></script>
+</body>
 </html>
