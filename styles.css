@@ -181,10 +181,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
-  /* iframe {
-    width: 100%; 
-    height: auto; 
-  } */
 }
 
 /* Styles for screens with a width of 992px and higher */
@@ -192,18 +188,10 @@ body {
   .contact-bg .text {
     width: 50%;
   }
-  /* iframe {
-    width: 100%; 
-    height: auto; 
-  } */
 }
 
 @media screen and (min-width: 1200px) {
   .contact-info {
     grid-template-columns: repeat(4, 1fr);
   }
-  /* iframe {
-    width: 100%; 
-    height: auto; 
-  } */
 }
