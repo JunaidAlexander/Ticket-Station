@@ -17,9 +17,26 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="events.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="src/css/events.css" />
   </head>
   <body class="bg">
+    <div class="container mt-5 opacity-90">
+      <i
+        class="fa fa-long-arrow-left text-white opacity-75"
+        aria-hidden="true"
+      ></i>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">gallery</a>
+      <i
+        class="fa fa-long-arrow-right text-white opacity-75"
+        aria-hidden="true"
+      ></i>
+    </div>
+
     <div class="container mt-4 text-center opacity-75 text-white">
       <h1>EVENTS AND EXHIBITIONS</h1>
       <p>
@@ -63,7 +80,7 @@
         <div class="img col-sm-5">
           <img
             class="img-thumbnail"
-            src="eventsImg/blowing-horn-removebg-preview.png"
+            src="image/blowing-horn-removebg-preview.png"
             alt="sculpture-blowing-horn"
           />
         </div>
@@ -431,6 +448,31 @@
         </div>
       </div>
     </div>
-    <script src="events.js"></script>
+
+    <div class="container-fuild mt-5 text-white">
+      <footer class="py-3 my-4 tex">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2 text-white">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#about" class="nav-link px-2 text-white"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="gallery.html" class="nav-link px-2 text-white">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="events.html" class="nav-link px-2 text-white">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2 text-white">Contact us</a>
+          </li>
+        </ul>
+        <p class="text-center text-white">&copy; Timeless Art 2023, Inc</p>
+      </footer>
+    </div>
+    <script src="src/js/events.js"></script>
   </body>
 </html>

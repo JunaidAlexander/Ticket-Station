@@ -1,0 +1,50 @@
+.text {
+  background: #0e0d0d;
+}
+
+.text .container a {
+  color: #f4bd66;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 5px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.text .container a:hover {
+  color: #e5e5e5;
+}
+
+.container h2 {
+  border-bottom: 3px solid #ff9e01;
+  font-weight: 700;
+}
+
+.card-cover {
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  transition: 0.3s;
+}
+
+.card-cover:hover {
+  .d-flex h3 {
+    visibility: hidden;
+  }
+  cursor: pointer;
+  background-blend-mode: normal;
+}
+
+.gap-2 .events {
+  font-weight: 700;
+  background-color: #fab96a;
+}
+
+.d-flex h3 {
+  color: #e5e5e5;
+  font-size: 25px;
+}
+
+.gap-2 .events:hover {
+  background: #000;
+}

@@ -1,3 +1,15 @@
+.bg .container a {
+  color: #f4bd66;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 5px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.bg .container a:hover {
+  color: #e5e5e5;
+}
 .container .search {
   display: flex;
   text-align: center;
@@ -35,7 +47,7 @@
 }
 
 .container button {
-  background: #ef118f;
+  background: #f4bd66;
   border-radius: 7px;
   color: #fff;
   outline: none;
@@ -45,7 +57,8 @@
 }
 
 .container button:hover {
-  background: #ab0444;
+  background: #af7923;
+  color: #fff;
 }
 @media (max-width: 1024px) {
   .container .img img {
