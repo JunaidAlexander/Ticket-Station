@@ -579,8 +579,8 @@ h2 {
   padding-top: 50px;
   display: flex;
   height: 40vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("images/The-Creation-of-Adam-ceiling-fresco-Sistine.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  /* background-image: url("image/The-Creation-of-Adam-ceiling-fresco-Sistine.jpg"); */
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -597,6 +597,7 @@ h2 {
 }
 .contact-bg h2 {
   font-size: 3rem;
+  font-weight: 700;
   text-transform: uppercase;
   padding: 0.4rem 0;
   letter-spacing: 4px;
@@ -727,6 +728,27 @@ span {
   max-width: 100%;
 }
 
+footer ul {
+  margin: 15px;
+  text-align: center;
+}
+footer li {
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+}
+footer li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer li a:hover {
+  color: bisque;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+}
 .contact-footer {
   padding: 2rem 0;
 }

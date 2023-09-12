@@ -9,12 +9,12 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
-    />
+    /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,60 +45,85 @@
         </ul>
       </header>
       <!--        Header End-->
-    <!--        Hero Section-->
-    <div class="content">
-      
-      <div class="textBox">
-        <h2>
-          Timeless <span id="output">Art:</span><br><span style="font-size: 55px; color: #333"> Where Creativity Knows No Clock. </span>
-        </h2>
-        <p>
-          "Step into a world where art transcends boundaries and imagination
-          knows no limits. A haven for art enthusiasts, collectors, and anyone
-          who appreciates the power of visual storytelling. Explore a diverse
-          and captivating collection of artworks that will take you on a
-          journey through the realms of creativity. Whether you're seeking
-          inspiration, looking to expand your art collection, or simply want
-          to immerse yourself in the beauty of human creativity, our tickets
-          are your passport to a world where art knows no bounds."
-        </p>
-        <a href="gallery.html" id="learnmore">Explore Now</a>
+      <!--        Hero Section-->
+      <div class="content">
+        <button
+          onclick="topFunction()"
+          id="myBtn"
+          title="Click to go to the Top"
+        >
+          Top
+        </button>
+        <div class="textBox">
+          <h2>
+            Timeless <span id="output">Art:</span> Where Creativity Knows No
+            Clock.
+          </h2>
+          <p>
+            "Step into a world where art transcends boundaries and imagination
+            knows no limits. A haven for art enthusiasts, collectors, and anyone
+            who appreciates the power of visual storytelling. Explore a diverse
+            and captivating collection of artworks that will take you on a
+            journey through the realms of creativity. Whether you're seeking
+            inspiration, looking to expand your art collection, or simply want
+            to immerse yourself in the beauty of human creativity, our tickets
+            are your passport to a world where art knows no bounds."
+          </p>
+          <a href="#" id="learnmore">Explore Now</a>
+        </div>
+
+        <div class="imgBox">
+          <img
+            src="images/411812_439920432696812_1146955824_o-removebg-preview (1).png"
+            alt=""
+            class="starbucks"
+          />
+        </div>
       </div>
 
-      <div class="imgBox">
-          <img src="image/art1.png"
-              alt="" class="starbucks">
-      </div>
-  </div>
+      <ul class="thumbnails">
+        <li>
+          <img
+            id="changeGreen"
+            src="images/411812_439920432696812_1146955824_o-removebg-preview (1).png"
+            onclick="imageSlider('images/411812_439920432696812_1146955824_o-removebg-preview (1).png');
+                            changeCircleColor('rgb(255, 228, 196)')
+                            changeSpanColor('rgb(255, 228, 196)')"
+          />
+        </li>
+        <li>
+          <img
+            id="changePink1"
+            src="images/71d5n19XXdS._AC_UF1000_1000_QL80_-removebg-preview.png"
+            onclick="imageSlider('images/71d5n19XXdS._AC_UF1000_1000_QL80_-removebg-preview.png');
+                            changeCircleColor('rgb(114, 102, 88)')
+                            changeSpanColor('rgb(114, 102, 88)')"
+          />
+        </li>
+        <li>
+          <img
+            id="changePink2"
+            src="image/art3.png"
+            onclick="imageSlider('image/art3.png');
+                            changeCircleColor('rgb(102, 101, 101)')
+                            changeSpanColor('rgb(102, 101, 101)')"
+          />
+        </li>
+      </ul>
 
-  <ul class="thumbnails">
-      <li>
-          <img id="changeGreen" src="image/art1.png" onclick="imageSlider('image/art1.png');
-                      changeCircleColor('rgb(255, 228, 196)')
-                      changeSpanColor('rgb(255, 228, 196)')">
-      </li>
-      <li>
-          <img id="changePink1" src="image/art2.png" onclick="imageSlider('image/art2.png');
-                      changeCircleColor('rgb(114, 102, 88)')
-                      changeSpanColor('rgb(114, 102, 88)')">
-      </li>
-      <li>
-          <img id="changePink2" src="image/art3.png" onclick="imageSlider('image/art3.png');
-                      changeCircleColor('rgb(102, 101, 101)')
-                      changeSpanColor('rgb(102, 101, 101)')">
-      </li>
-  </ul>
-
-  <ul class="social" id="social">
-      <li><a href="#" target="_blank"><img
-                  src="image/facebook.png"></a></li>
-      <li><a href="#" target="_blank"><img
-                  src="image/twitter.png"></a></li>
-      <li><a href="#" target="_blank"><img
-                  src="image/instagram.png"></a></li>
-  </ul>
-</section>
-<!--        Hero Section End-->
+      <ul class="social" id="social">
+        <li>
+          <a href="#" target="_blank"><img src="image/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"><img src="image/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"><img src="image/instagram.png" /></a>
+        </li>
+      </ul>
+    </section>
+    <!--        Hero Section End-->
     <!--        About Us-->
     <section>
       <div class="container" id="about">
@@ -112,7 +137,7 @@
               </div>
             </div>
           </div>
-          <div class="item" style="background-image: url(https://images.pexels.com/photos/3724836/pexels-photo-3724836.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)">
+          <div class="item" style="background-image: url(image/gallery2.jpg)">
             <div class="content2">
               <div class="name">Timeless Art</div>
               <div class="des">
@@ -124,7 +149,7 @@
               </div>
             </div>
           </div>
-          <div class="item" style="background-image: url(https://images.pexels.com/photos/277054/pexels-photo-277054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+          <div class="item" style="background-image: url(image/gallery3.jpg)">
             <div class="content2">
               <div class="name">Discover the Unseen</div>
               <div class="des">
@@ -138,7 +163,7 @@
               </div>
             </div>
           </div>
-          <div class="item" style="background-image: url(https://images.pexels.com/photos/20967/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)">
+          <div class="item" style="background-image: url(image/gallery4.jpg)">
             <div class="content2">
               <div class="name">Engage Your Senses</div>
               <div class="des">
@@ -163,8 +188,13 @@
     <!--        About Us End-->
     <!--contact section-->
     <section class="contact" id="contact">
-      <div class="contact-bg">
-        <h2>Contact Us</h2>
+      <div
+        class="contact-bg mt-5"
+        style="
+          background-image: url(image/The-Creation-of-Adam-ceiling-fresco-Sistine.jpg);
+        "
+      >
+        <h2 class="mt-5">Contact Us</h2>
         <div class="line"></div>
         <p class="text">
           "Welcome to Timeless Arts, your ticket station to a world of timeless
@@ -232,65 +262,27 @@
 
           <div>
             <img
-              src="images/blowing-horn-removebg-preview.png"
+              src="image/blowing-horn-removebg-preview.png"
               alt="sculpture-blowing-horn"
             />
           </div>
         </div>
       </div>
-      <!-- <div class="map">
+      <div class="map" style="border: 2px solid bisque; width: 100%">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26466.685585145893!2d18.450782416386893!3d-33.983910148023874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc42c52081a7cb%3A0x79fbdc90a0e82eac!2sClaremont%2C%20Cape%20Town%2C%207708!5e0!3m2!1sen!2sza!4v1694165614267!5m2!1sen!2sza"
-          height="400px"
+          width="100%"
+          height="400"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-      </div> -->
-    </section>
-    <!--        Footer-->
-    <footer class="footer">
-      <div class="container3">
-        <div class="row">
-          <div class="footer-col">
-            <h4>Timeless Art</h4>
-            <ul>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Events</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Address</h4>
-            <ul>
-              <li><a href="#">7700 Rondebosch East</a></li>
-              <li><a href="#">Claremont</a></li>
-              <li><a href="#">Cape Town</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Contact</h4>
-            <ul>
-              <li><a href="#">(021) 664 7790</a></li>
-              <li><a href="#">(071) 667 8119</a></li>
-              <li><a href="#">timelessart@zylker.com.</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>follow us</h4>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-          </div>
-        </div>
-      </div> -->
+      </div>
     </section>
     <hr />
 
-    <div class="container-fuild mt-5 text-white">
+    <div class=" ">
       <footer class="py-3 my-4 tex">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
@@ -311,7 +303,7 @@
             <a href="index.html" class="nav-link px-2 text-white">Contact us</a>
           </li>
         </ul>
-        <p class="text-center text-white">&copy; Timeless Art 2023, Inc</p>
+        <p class="">&copy; Timeless Art 2023, Inc</p>
         <div class="contact-footer">
           <!-- <h3>Follow Us</h3> -->
           <div class="social-links">
