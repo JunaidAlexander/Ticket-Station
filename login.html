@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/login.css">
+  
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css"/>
+</head>
+
+<body>
+    <div id="firebaseui-auth-container">
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyA185pyb0LVgceErGXe8lwgtD6LaUm7mrc",
+            authDomain: "ticket-station-e0161.firebaseapp.com",
+            projectId: "ticket-station-e0161",
+            storageBucket: "ticket-station-e0161.appspot.com",
+            messagingSenderId: "414672388957",
+            appId: "1:414672388957:web:c0cbec658c53821090deb4",
+            measurementId: "G-DJRFR6NX77"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        console.log(firebase)
+        const auth = firebase.auth();
+        console.log(auth)
+    </script>
+<script src="src/js/login.js"></script>
+</body>
+</html>

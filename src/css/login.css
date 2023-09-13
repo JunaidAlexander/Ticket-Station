@@ -1,0 +1,159 @@
+body {}
+
+
+
+#firebaseui-auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.firebaseui-card {
+  background-color: black;
+  /* Set the background color to black */
+
+}
+
+
+#firebaseui-auth-container .mdl-card.firebaseui-container {}
+
+#firebaseui-auth-container .mdl-card.firebaseui-container form {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: black;
+
+}
+
+.mdl-card {
+  background-color: black;
+}
+
+#firebaseui-auth-container .mdl-card.firebaseui-container form .firebaseui-card-header {
+  color: bisque !important;
+}
+
+#firebaseui-auth-container .mdl-card.firebaseui-container form .firebaseui-card-header .firebaseui-title {
+  text-align: center;
+  color: bisque;
+
+}
+
+#firebaseui-auth-container .mdl-card.firebaseui-container form .firebaseui-card-content .firebaseui-relative-wrapper .firebaseui-textfield .firebaseui-input.firebaseui-id-email {
+  color: bisque !important;
+
+}
+
+.custom-email-input-style {}
+
+.custom-submit-button-style {
+  background-color: bisque;
+  color: #000;
+}
+
+#firebaseui-auth-container .mdl-card.firebaseui-container form .firebaseui-card-content .firebaseui-relative-wrapper .firebaseui-textfield {
+  color: #ffff;
+}
+
+#firebaseui-auth-container .mdl-card.firebaseui-container form .firebaseui-card-content .firebaseui-relative-wrapper .firebaseui-textfield .firebaseui-error-wrapper .firebaseui-error.firebaseui-text-input-error.firebaseui-hidden.firebaseui-id-email-error {}
+
+#firebaseui-auth-container .mdl-card.firebaseui-container form button.firebaseui-id-submit {
+  border-radius: 5px;
+  background-color: bisque;
+
+}
+
+button {
+  color: #000;
+}
+
+.mdl-textfield__input .firebaseui-input .firebaseui-id-password {
+  color: #ffff
+}
+
+
+.input.firebaseui-input,
+input.firebaseui-input-invalid {
+  color: #ffff;
+}
+
+.mdl-textfield__label .firebaseui-label {
+  color: #ffff;
+}
+
+.mdl-textfield__label.firebaseui-label[for="password"] {
+  color: red !important;
+}
+
+
+
+.firebaseui-textfield.mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.is-upgraded {
+  color: #ffff;
+}
+
+
+
+
+/* color  the text  */
+/* Style the label associated with the "password" input */
+.mdl-textfield__label.firebaseui-label[for="password"] {
+  color: bisque !important;
+
+}
+
+/* Style the div containing the input field */
+.firebaseui-textfield.mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.is-upgraded {
+  color: #ffff;
+}
+
+/* Style the label associated with the "password" input without !important */
+.mdl-textfield__label.firebaseui-label[for="password"] {
+  color: bisque !important;
+  ;
+}
+
+/* Style the input element with multiple classes and attributes */
+.mdl-textfield__input.firebaseui-input.firebaseui-id-password[type="password"][name="password"][autocomplete="current-password"] {
+  color: bisque !important;
+}
+
+/* Additional styles with !important */
+.firebaseui-textfield.mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.is-upgraded {
+  color: #ffff !important;
+}
+
+.mdl-textfield__label.firebaseui-label[for="password"] {
+  color: bisque !important;
+
+}
+
+.mdl-textfield__input.firebaseui-input.firebaseui-id-password[type="password"][name="password"][autocomplete="current-password"] {
+  color: #ffff !important;
+}
+
+
+#firebaseui-auth-container input {
+  color: bisque !important;
+}
+
+.mdl-button--raised.mdl-button--colored {
+  background: rgb(63, 81, 181);
+  color: #000;
+}
+
+
+#firebaseui-auth-container .mdl-card.firebaseui-container form button.firebaseui-id-submit {
+
+  color: #000;
+}
+
+.firebaseui-link { 
+  color: bisque !important;
+}
+
+
+label.mdl-textfield__label.firebaseui-label[for="email"] {
+  color: bisque !important;
+  
+}
