@@ -1,4 +1,3 @@
-
 class Login {
   constructor() {
     // Initialize Firebase UI and start the authentication process.
@@ -12,12 +11,12 @@ class Login {
       signInOptions: [
         {
           provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
-          requireDisplayName: false
-        }
+          requireDisplayName: false,
+        },
       ],
       callbacks: {
-        signInSuccessWithAuthResult: this.onSignInSuccess.bind(this)
-      }
+        signInSuccessWithAuthResult: this.onSignInSuccess.bind(this),
+      },
     });
   }
 

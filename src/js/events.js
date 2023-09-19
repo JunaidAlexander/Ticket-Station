@@ -14,6 +14,7 @@ let event3Text = event3.innerText;
 // Define the TicketDetails class to hold ticket details
 document.addEventListener("DOMContentLoaded", function () {
   // Define the TicketDetails class to hold ticket details
+
   class TicketDetails {
     constructor() {
       this.userName;
@@ -25,11 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     ticketSuccessful() {
-      return `Purchase successful`;
+      return `${this.eventName} Ticket Purchase successful🎉☺️ See you there!`;
     }
-    // Display ticket details in the "ticket" modal
+
     displayDetails() {
-      // Get the elements in the "ticket" modal
       const usernameElement = document.getElementById("username");
       const eventGalleryElement = document.getElementById("eventGallery");
       const eventNameElement = document.getElementById("eventN");
@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
       const eventDateElement = document.getElementById("eventDate");
       const eventPriceElement = document.getElementById("eventPrice");
 
-      // Set the innerText of the elements with the ticket details
       if (usernameElement) usernameElement.innerText = this.userName;
       if (eventGalleryElement) eventGalleryElement.innerText = this.galleryName;
       if (eventNameElement) eventNameElement.innerText = this.eventName;
@@ -47,63 +46,78 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Function to handle the "Buy" button click for event one
-  function eventOne() {
-    // Create an instance of TicketDetails and set event one details
-    const ticket = new TicketDetails();
-    ticket.userName = prompt("WHAT IS YOUR FULL NAME?").toUpperCase();
-    ticket.galleryName = "ZEITZ MOCCA MUSEUM";
-    ticket.eventName = "AFRICA WEDNESDAY";
-    ticket.ticketNo = "ZMC234123";
-    ticket.eventDate = "2023-09-15";
-    ticket.price = "FREE";
-
-    alert(ticket.ticketSuccessful());
-    // Display event one details in the "ticket" modal
-    ticket.displayDetails();
-  }
-  document.getElementById("eventOneButton").addEventListener("click", eventOne);
-
-  // Function to handle the "Buy" button click for event two
-
-  function eventTwo() {
-    // Create an instance of TicketDetails and set event two details
-    const ticket = new TicketDetails();
-    ticket.userName = prompt("WHAT IS YOUR FULL NAME?").toUpperCase();
-    ticket.galleryName = "Art B Gallery";
-    ticket.eventName = "PAUSE EXHIBITION";
-    ticket.ticketNo = "ABG59668";
-    ticket.eventDate = "2023-09-27";
-    ticket.price = "R650.00";
-
-    alert(ticket.ticketSuccessful());
-    // Display event two details in the "ticket" modal
-    ticket.displayDetails();
+  class EventTicket extends TicketDetails {
+    constructor(userName, galleryName, eventName, ticketNo, eventDate, price) {
+      super();
+      this.userName = prompt("What is your full name?").toUpperCase();
+      this.galleryName = galleryName;
+      this.eventName = eventName;
+      this.ticketNo = ticketNo;
+      this.eventDate = eventDate;
+      this.price = price;
+    }
   }
 
-  document.getElementById("eventTwoButton").addEventListener("click", eventTwo);
-
-  // Function to handle the "Buy" button click for event three
-
-  function eventThree() {
-    // Create an instance of TicketDetails and set event three details
-    const ticket = new TicketDetails();
-    ticket.userName = prompt("WHAT IS YOUR FULL NAME?").toUpperCase();
-    ticket.galleryName = "EVERARD READ FRANSCHHOEK";
-    ticket.eventName = "WHAT I FEEL WHEN I THINK ABOUT THE COSMOS EXHIBITION";
-    ticket.ticketNo = "ERF822890";
-    ticket.eventDate = "2023-10-01";
-    ticket.price = "R800";
+  // Function to handle the "Buy" button click for an event
+  function handleEventPurchase(
+    userName,
+    galleryName,
+    eventName,
+    ticketNo,
+    eventDate,
+    price
+  ) {
+    const ticket = new EventTicket(
+      userName,
+      galleryName,
+      eventName,
+      ticketNo,
+      eventDate,
+      price
+    );
 
     alert(ticket.ticketSuccessful());
-    // Display event three details in the "ticket" modal
-
     ticket.displayDetails();
   }
 
   document
+    .getElementById("eventOneButton")
+    .addEventListener("click", function () {
+      handleEventPurchase(
+        "",
+        "ZEITZ MOCCA MUSEUM",
+        "AFRICA WEDNESDAY",
+        "ZMC234123",
+        "2023-09-15",
+        "FREE"
+      );
+    });
+
+  document
+    .getElementById("eventTwoButton")
+    .addEventListener("click", function () {
+      handleEventPurchase(
+        "",
+        "Art B Gallery",
+        "PAUSE EXHIBITION",
+        "ABG59668",
+        "2023-09-27",
+        "R650.00"
+      );
+    });
+
+  document
     .getElementById("eventThreeButton")
-    .addEventListener("click", eventThree);
+    .addEventListener("click", function () {
+      handleEventPurchase(
+        "",
+        "EVERARD READ FRANSCHHOEK",
+        "WHAT I FEEL WHEN I THINK ABOUT THE COSMOS EXHIBITION",
+        "ERF822890",
+        "2023-10-01",
+        "R800"
+      );
+    });
 
   /////// SEARCH BAR /////////////////////////////////////////////
 
@@ -195,6 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
       );
 
       // Create and set the inner HTML for the event element
+
       eventElement.innerHTML = `
       <div class="d-flex gap-2 w-100 justify-content-between">
         <div>
