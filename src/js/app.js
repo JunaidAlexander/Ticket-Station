@@ -1,5 +1,5 @@
 const imageSlider = (currentImg) => {
-  document.querySelector(".starbucks").src = currentImg;
+  document.querySelector(".artgallery").src = currentImg;
 };
 
 //Handle circle color
@@ -11,7 +11,7 @@ document.getElementById("changeGreen").onclick = function () {
   document.getElementById("output").style.color = "rgb(255, 228, 196)";
   document.getElementById("social").style.background = "rgb(255, 228, 196)";
   document.getElementById("learnmore").style.background = "rgb(255, 228, 196)";
-  document.querySelector(".starbucks").src = "image/art1.png";
+  document.querySelector(".artgallery").src = "image/art1.png";
   document.querySelector(".circle").style.background = "rgb(255, 228, 196)";
 };
 
@@ -19,14 +19,14 @@ document.getElementById("changePink1").onclick = function () {
   document.getElementById("output").style.color = "rgb(114, 102, 88)";
   document.getElementById("social").style.background = "rgb(114, 102, 88)";
   document.getElementById("learnmore").style.background = "rgb(114, 102, 88)";
-  document.querySelector(".starbucks").src = "image/art2.png";
+  document.querySelector(".artgallery").src = "image/art2.png";
   document.querySelector(".circle").style.background = "rgb(114, 102, 88)";
 };
 document.getElementById("changePink2").onclick = function () {
   document.getElementById("output").style.color = "rgb(102, 101, 101)";
   document.getElementById("social").style.background = "rgb(102, 101, 101)";
   document.getElementById("learnmore").style.background = "rgb(102, 101, 101)";
-  document.querySelector(".starbucks").src = "image/art3.png";
+  document.querySelector(".artgallery").src = "image/art3.png";
   document.querySelector(".circle").style.background = "rgb(102, 101, 101)";
 };
 //Handle menu button
